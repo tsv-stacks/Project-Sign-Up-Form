@@ -127,6 +127,24 @@ input {
   border: 1px solid var(--purple);
 }
 
+input:focus {
+  box-shadow: 3px 4px var(--blue);
+}
+
+.invalid {
+  outline: 2px solid var(--pink);
+}
+
+.valid {
+  outline: 2px solid greenyellow;
+}
+
+#password-message {
+  font-size: smaller;
+  color: #ff006e;
+  /* margin-left: 5%; */
+}
+
 /* button */
 
 .btn {

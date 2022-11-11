@@ -69,8 +69,14 @@
               <input type="number" id="phone-number" />
             </div>
             <div class="cell">
-              <label for="password">Last Name</label>
-              <input minlength="8" required type="password" id="password" />
+              <label for="password">Password</label>
+              <input
+                minlength="8"
+                required
+                type="password"
+                id="password"
+                class="error"
+              />
             </div>
             <div class="cell">
               <label for="password-confirm">Confirm Password</label>
@@ -79,13 +85,16 @@
                 required
                 type="password"
                 id="password-confirm"
+                class="error"
               />
             </div>
           </div>
         </fieldset>
-        <button class="btn">Create Account</button>
+        <button class="btn" onclick="validatePassword()">Create Account</button>
+        <div><span id="password-message"></span></div>
         <p>Already have an account? <a href="#">Log in</a></p>
       </div>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
