@@ -1,0 +1,38 @@
+:root {
+  --blue: #3a86ff;
+  --purple: #8338ec;
+  --pink: #ff006e;
+  --orange: #fb5607;
+  --yellow: #ffbe0b;
+}
+
+* {
+  box-sizing: border-box;
+  border: 1px solid red;
+}
+
+html,
+main {
+  margin: 0;
+  padding: 0;
+}
+
+#side-image {
+  height: 100vh;
+  width: 35vw;
+  background-image: url(./luis-villasmil-ITFwHdPEED0-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+#side-image > p,
+a {
+  color: #ffbe0b;
+  font-style: italic;
+  font-size: small;
+}
