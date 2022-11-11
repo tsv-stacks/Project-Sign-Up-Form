@@ -8,7 +8,7 @@
 
 * {
   box-sizing: border-box;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 html,
@@ -34,11 +34,43 @@ body {
   top: 0;
 }
 
-#side-image > p,
-a {
+#img-source,
+#img-source a {
   color: var(--orange);
   font-style: italic;
   font-size: small;
+}
+
+#logo-bg {
+  width: 35vw;
+  position: fixed;
+  top: 10%;
+  background-color: rgba(131, 56, 236, 0.5);
+  border-top: var(--purple) solid 1px;
+  border-bottom: var(--purple) solid 1px;
+}
+
+#logo {
+  width: 35vw;
+  display: inline-flex;
+  justify-content: center;
+  align-content: flex-start;
+  color: black;
+  font-family: "Common Pixel", sans-serif;
+  margin: 0 auto;
+}
+
+#logo img {
+  width: 65px;
+  height: 60px;
+  flex-grow: 1;
+  opacity: 1;
+}
+
+#logo h3 {
+  flex-grow: 3;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
@@ -57,15 +89,54 @@ h1 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 0px;
+  grid-column-gap: 15px;
   grid-row-gap: 0px;
+  max-width: 500px;
 }
 
 fieldset {
   /* background-color: var(--blue); */
   margin: 0;
+  border-left: 0;
+  border-right: 0;
 }
 
 .cell {
   display: grid;
+}
+
+input {
+  border: 1px solid var(--purple);
+}
+
+/* button */
+
+.btn {
+  box-shadow: inset 0px 1px 0px 0px #bee2f9;
+  background: linear-gradient(to bottom, #3a86ff 5%, #468ccf 100%);
+  background-color: #63b8ee;
+  border-radius: 5px;
+  border: 1px solid #8338ec;
+  display: inline-block;
+  cursor: pointer;
+  color: whitesmoke;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #7cacde;
+}
+.btn:hover {
+  background: linear-gradient(to bottom, #468ccf 5%, #63b8ee 100%);
+  background-color: #468ccf;
+}
+.btn:active {
+  position: relative;
+  top: 1px;
+}
+
+@media (max-width: 400px) {
+  .parent {
+    display: block;
+  }
 }
