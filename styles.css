@@ -8,7 +8,7 @@
 
 * {
   box-sizing: border-box;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 html,
@@ -51,26 +51,29 @@ body {
 }
 
 #logo {
-  width: 35vw;
+  max-width: 35vw;
   display: inline-flex;
   justify-content: center;
   align-content: flex-start;
   color: black;
   font-family: "Common Pixel", sans-serif;
   margin: 0 auto;
+  justify-items: center;
 }
 
 #logo img {
   width: 65px;
   height: 60px;
   flex-grow: 1;
-  opacity: 1;
 }
 
 #logo h3 {
+  font-size: 2rem;
+  padding-top: 12px;
+  padding-left: 2px;
+  margin: 0;
+  text-align: left;
   flex-grow: 3;
-  justify-content: center;
-  align-items: center;
 }
 
 h1 {
@@ -138,5 +141,12 @@ input {
 @media (max-width: 400px) {
   .parent {
     display: block;
+  }
+}
+
+@media (max-width: 876px) {
+  #logo h3 {
+    font-size: 1.5rem;
+    padding-top: 15px;
   }
 }
