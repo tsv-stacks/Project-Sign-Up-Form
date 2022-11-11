@@ -79,7 +79,7 @@ body {
 }
 
 h1 {
-  text-align: center;
+  margin-left: 5%;
 }
 
 #main-content {
@@ -88,6 +88,11 @@ h1 {
   width: 65vw;
   position: fixed;
   right: 0;
+}
+
+#main-content p {
+  margin-left: 5%;
+  margin-right: 25%;
 }
 
 .parent {
@@ -103,10 +108,15 @@ h1 {
 fieldset {
   /* background-color: var(--blue); */
   margin: 0;
+  padding-left: 5%;
   border-left: 0;
   border-right: 0;
   border-top: 2px var(--purple) solid;
   border-bottom: 2px var(--purple) solid;
+}
+
+fieldset input {
+  margin-bottom: 2px;
 }
 
 .cell {
@@ -120,6 +130,8 @@ input {
 /* button */
 
 .btn {
+  margin: 2% 5%;
+  margin-bottom: 0;
   box-shadow: inset 0px 1px 0px 0px #bee2f9;
   background: linear-gradient(to bottom, #3a86ff 5%, #468ccf 100%);
   background-color: #63b8ee;
@@ -153,5 +165,9 @@ input {
   #logo h3 {
     font-size: 1.5rem;
     padding-top: 15px;
+  }
+
+  #main-content p {
+    margin-right: 10%;
   }
 }
