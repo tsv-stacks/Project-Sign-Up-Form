@@ -12,7 +12,7 @@
 }
 
 html,
-main {
+body {
   margin: 0;
   padding: 0;
 }
@@ -28,11 +28,44 @@ main {
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
+  position: fixed;
+  z-index: -1;
+  left: 0;
+  top: 0;
 }
 
 #side-image > p,
 a {
-  color: #ffbe0b;
+  color: var(--orange);
   font-style: italic;
   font-size: small;
+}
+
+h1 {
+  text-align: center;
+}
+
+#main-content {
+  height: 100vh;
+  width: 65vw;
+  position: fixed;
+  right: 0;
+}
+
+.parent {
+  text-transform: uppercase;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+fieldset {
+  /* background-color: var(--blue); */
+  margin: 0;
+}
+
+.cell {
+  display: grid;
 }
