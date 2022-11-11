@@ -4,11 +4,13 @@
   --pink: #ff006e;
   --orange: #fb5607;
   --yellow: #ffbe0b;
+
+  /* font-family: 'Roboto Condensed', sans-serif; */
 }
 
 * {
   box-sizing: border-box;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 html,
@@ -81,6 +83,7 @@ h1 {
 }
 
 #main-content {
+  font-family: "Roboto Condensed", sans-serif;
   height: 100vh;
   width: 65vw;
   position: fixed;
@@ -102,6 +105,8 @@ fieldset {
   margin: 0;
   border-left: 0;
   border-right: 0;
+  border-top: 2px var(--purple) solid;
+  border-bottom: 2px var(--purple) solid;
 }
 
 .cell {

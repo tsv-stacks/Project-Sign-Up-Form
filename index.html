@@ -7,6 +7,12 @@
     <title>Project: Sign-Up Form</title>
     <link href="styles.css" rel="stylesheet" />
     <link href="https://fonts.cdnfonts.com/css/common-pixel" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;1,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main>
@@ -56,16 +62,21 @@
             </div>
             <div class="cell">
               <label for="password">Last Name</label>
-              <input required type="password" id="password" />
+              <input minlength="8" required type="password" id="password" />
             </div>
             <div class="cell">
               <label for="password-confirm">Confirm Password</label>
-              <input required type="password" id="password-confirm" />
+              <input
+                minlength="8"
+                required
+                type="password"
+                id="password-confirm"
+              />
             </div>
           </div>
         </fieldset>
         <button class="btn">Create Account</button>
-        <p>Already have an account?<a href="#">Log in</a></p>
+        <p>Already have an account? <a href="#">Log in</a></p>
       </div>
     </main>
   </body>
