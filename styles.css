@@ -145,6 +145,11 @@ input:focus {
   /* margin-left: 5%; */
 }
 
+#password-matched {
+  font-size: smaller;
+  color: green;
+}
+
 /* button */
 
 .btn {
