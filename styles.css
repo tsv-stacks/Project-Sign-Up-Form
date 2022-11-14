@@ -179,9 +179,18 @@ input:focus {
   top: 1px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 530px) {
   #logo h3 {
-    font-size: 0.5rem;
+    font-size: 1rem;
+    text-align: center;
+    padding-bottom: 25px;
+    margin: 0 auto;
+  }
+
+  #logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .parent {
@@ -205,5 +214,12 @@ input:focus {
 
   #main-content p {
     margin-right: 10%;
+  }
+}
+
+@media (max-width: 706px) {
+  #logo h3 {
+    font-size: medium;
+    padding-top: 20px;
   }
 }
