@@ -199,6 +199,7 @@ input:focus {
 
   #main-content {
     padding-top: 0.5rem;
+    overflow-y: auto;
   }
 
   h1 {
